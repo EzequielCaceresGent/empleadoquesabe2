@@ -1,10 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
 
-
-
-  
-
 function Tarea(props){
     const [mostrar,setMostrar]=useState(false);
     const [completado,setCompletado]=useState(false);
@@ -15,26 +11,29 @@ function Tarea(props){
     margin: 10px;
     align-items: center;
     height: 100%;
-    border: solid white 1px;
-    border-radius: 5px;
+    border: solid #008CBA 2px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
     #descripcion{
-        display: ${mostrar?"absolute":"none"};
+        display: ${mostrar?"block":"none"};
         font-size: ${mostrar?"15px":"20px"};
         max-height: 100px;
         width: 300px;
     
     }
     #mas{
-        background-color: white;
+        background-color: #31302F;
         font-size: 12px;
-        border-radius: 8px;
-        border: 2px solid #008CBA;
         -webkit-transition-duration: 0.4s; /* Safari */
-        transition-duration: 0.4s;
+        transition-duration: 1s;
+        height: 5vh;
+        border: none
+       
     }
     #mas:hover {
-    background-color: #4CAF50; /* Green */
-   
+    background-color: #008CBA; /* Green */
+ 
 }
     `
     function mostrarDescripcion(){
@@ -48,7 +47,7 @@ function Tarea(props){
         
             <StyledDatos>
             <p className="font-link">Carga Horaria:{props.tarea.cargaHoraria} Horas</p>
-            <p className="font-link">{props.tarea.completado?"Esta completado":"No esta completado"}</p>
+            <p className="font-link">{props.tarea.completado?"Esta completado":"No fue completado"}</p>
             <button id="mas" className="font-link" onClick={mostrarDescripcion}>Ver más</button>
             <div className="font-link" id="descripcion">{props.tarea.descripcion}</div>
             <button id="mas" className="font-link" onClick={marcarCompletado}>Marcar como completado</button>

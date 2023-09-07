@@ -4,7 +4,9 @@ const StyledNav = styled.nav`
     display: flex;
     height: 10vh;
     justify-content: space-between;
-    background-color: #add8e6;
+    background-color: #31302F;
+    border-bottom: solid #008CBA 2px;
+
     img {
         height: 100%;
         ;
@@ -18,19 +20,25 @@ const StyledNav = styled.nav`
         align-items: stretch;
         margin: 0%;
         padding: 0%;
-        -webkit-transition-duration: 0.4s; /* Safari */
-        transition-duration: 0.4s;
+        
     }
 
     li {
         display: block ;
         height: 100%;
-        flex-grow: 1;
+        width: 100%;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration:1s;
+       
     }
     
-    ul :hover{
-        background-color: #85b0bd; /* Green */
+    li :hover{
+        
+        color:white;
+        font-size: 20px;
+      
     }
+    
   
 `;
 
