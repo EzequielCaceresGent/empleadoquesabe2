@@ -42,6 +42,7 @@ function Tarea(props){
     }
     function marcarCompletado(){
         setCompletado(!completado);
+        props.tarea.completado=true;
     }
     return(
         

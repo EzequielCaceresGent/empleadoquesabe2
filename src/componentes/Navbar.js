@@ -12,7 +12,6 @@ const StyledNav = styled.nav`
 
     ul {
         display: flex;
-        
         width: 30%;
         height: 100%;
         justify-content: space-around;

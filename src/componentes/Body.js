@@ -2,7 +2,7 @@ import Tarea from "./Tarea";
 import styled from "styled-components";
 const StyledTarea=styled.div`
     display: flex;
-    background-color: #FF7D33;
+    background-color: #F08080;
     align-items: stretch;
     justify-content: space-around;
     flex-direction: column;
@@ -18,6 +18,8 @@ const StyledTarea=styled.div`
 
  function Body(){
     const tarea=[{descripcion:"el pepe adsadsadasdsadasdasdasdsadsadasasdasdsa",cargaHoraria:5,completado:false},
+    {descripcion:"el pepe",cargaHoraria:7,completado:false},
+    {descripcion:"el pepe",cargaHoraria:8,completado:false},
     {descripcion:"el pepe",cargaHoraria:7,completado:false},
     {descripcion:"el pepe",cargaHoraria:8,completado:false},];
     return (
