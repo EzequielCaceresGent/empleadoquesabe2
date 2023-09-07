@@ -3,9 +3,10 @@ import './App.css';
 import './componentes/Navbar';
 import Navbar from './componentes/Navbar';
 import Body from './componentes/Body';
+
 function App() {
   return (
-    <div >
+    <div>
       <Navbar> </Navbar>
       <Body></Body>
     </div>
